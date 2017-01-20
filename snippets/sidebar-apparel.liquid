@@ -1,0 +1,10 @@
+<div class="sidebar four columns">
+ <div class="sidebar-wrap">
+   <h5>SHOP BY GENDER</h5>
+<ul style="padding-left:0;">
+{% for link in linklists.apparel.links %}
+   <li style="list-style-type:none; border-bottom: 1px solid #e6e6e6; padding-bottom:5px; padding-top:5px;">{{ link.title | link_to: link.url }}</li>
+{% endfor %}
+</ul>
+  </div>
+</div>
